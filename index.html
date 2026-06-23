@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+</head>
+<body>
+     <div class="container">
+    <h1>📊 Test Score Calculator</h1>
+
+    <div class="input-section">
+      <input 
+        type="number" 
+        id="scoreInput" 
+        placeholder="Enter test score (0-100)" 
+        min="0" 
+        max="100"
+      >
+      <button id="addBtn">Add Score</button>
+      <button id="clearBtn" class="danger">Clear All</button>
+    </div>
+
+    <div class="results-section">
+      <h2>📈 Your Results:</h2>
+      <div id="scoreList" class="score-list">
+        <div class="empty-message">No scores yet. Add your first score! 👆</div>
+        <div class="score-item"></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-label">Number of Tests</div>
+          <div class="stat-value" id="testCount">0</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-label">Average Score</div>
+          <div class="stat-value" id="average">--</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-label">Best Score</div>
+          <div class="stat-value" id="bestScore">--</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-label">Lowest Score</div>
+          <div class="stat-value" id="lowestScore">--</div>
+        </div>
+
+        <div class="grade-box">
+          <div class="stat-label">Your Grade</div>
+          <div class="grade" id="gradeDisplay">--</div>
+          <div class="stars" id="starDisplay"></div>
+        </div>
+        <div class="score-item">[]</div>
+      </div>
+    </div>
+  </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
